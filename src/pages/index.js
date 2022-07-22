@@ -1,60 +1,59 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className = "layout">
     <Seo title="Home" />
-
+    
     <section className="presentation">
       <div className="presentation__intro">
-      <h1>Hi I'm Nathan </h1>
-      <p> Description </p>
+      <p>Hi I'm Nathan
+        Description, link github, link resume </p>
       </div>
+
       <div className="presentation__picture">
-        <img class="img-me" src=".images\principal.jpg" alt="me"></img>
+        <img alt="picture_of_myself"></img>
       </div>
+
     </section>
 
-      <section className= "projects">
-        <div className ="projects__software">
-            <div classname="projects__software__description">
-              <h2>Project 1 </h2>
-              <p> Description project 1 </p>
+      <section className= "domains">
+
+        <div className ="domains__subdomains">
+            <div classname="domains__latestProject__description">
+              <p>Latest projectDescription project QT</p>
             </div>
-            <div className = "projects__software__links">
-              <a href="">RepositoryProject</a>
+            <div classname="domains__latestProject__video">
+            {/* <video width="320" height="240" controls>
+              <source src="src\videos\Qt_PathFinding.mp4" type="video/mp4"></source>
+              
+            </video> */}
+
+          <iframe id="ytplayer" type="text/html" width="640" height="360"
+            src="https://www.youtube.com/embed/y33knp7ViVo"
+          frameborder="0"></iframe>
             </div>
         </div>
 
-        <div className ="projects__software">
-          <div classname="projects__software__description">
-            <h2>Project 2</h2>
-            <p> Description project 2 </p>
-          </div>
-          <div className = "projects__software__links">
-          <a href="">RepositoryProject</a>
+        <div className ="domains__subdomains">
+          <div classname="domains__robotics__description">
+            Robotics
+            <p> Description Robotics (active controls, path planning, SLAM) </p>
           </div>
         </div>
 
-        <div className ="projects__software">
-          <div classname="projects__software__description">
-          <h2>Project 3</h2>
-          <p> Description project 3 </p>
-          </div>
-          <div className = "projects__software__links">
-          <a href="">RepositoryProject</a>
+        <div className ="domains__subdomains">
+          <div classname="domains__machineLearning__description">
+          Software and Machine Learning
+          <p> Description  machine learning(from scratch, CNN vs bayesian)  </p>
           </div>
         </div>
 
-        <div className="projects__software__more">
-          <h1>
-            More projects
-            <Link to='\'></Link>
-          </h1>
+        <div className="domains_more_projects">
+          More projects<Link className="header__links" to="\"></Link>
         </div>
       </section>
 

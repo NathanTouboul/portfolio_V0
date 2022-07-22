@@ -12,7 +12,7 @@ const Header = ({ siteTitle, siteProfile, siteProjects, siteContact }) => (
     
     </div>
     <div className="header__tabs"> 
-      <Link className="header__links" to="/">
+      <Link className="header__links" to="">
         {siteProfile}
       </Link>
       <Link className="header__links" to="/">
@@ -35,7 +35,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: 'Home',
   siteProfile: 'Profile',
   siteProjects: 'Projects', 
   siteContact: 'Contact', 
