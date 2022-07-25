@@ -17,7 +17,12 @@ const Layout = ({ children }) => {
 
   return (
     <body>
-      <Header siteTitle={'Home'} />
+      <Header 
+      siteTitle     = {'Site in construction'} 
+      siteProfile   = {'Profile'} 
+      siteProjects  = {"Projects"}
+      siteContact   = {"Contacts"}
+      />
 
       <main className = "main">{children}</main>
 

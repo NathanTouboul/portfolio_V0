@@ -12,13 +12,13 @@ const Header = ({ siteTitle, siteProfile, siteProjects, siteContact }) => (
     
     </div>
     <div className="header__tabs"> 
-      <Link className="header__links" to="">
+      <Link className="header__links" to="/profile-page/">
         {siteProfile}
       </Link>
-      <Link className="header__links" to="/">
+      <Link className="header__links" to="/projects-page/">
         {siteProjects}
       </Link>
-      <Link className="header__links" to="/">
+      <Link className="header__links" to="">
         {siteContact}
       </Link>
       
