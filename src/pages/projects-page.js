@@ -7,7 +7,10 @@ import Seo from "../components/seo"
 const ProjectsPage = () => (
   <Layout>
     <Seo title="Project Page" />
+    <div class="title_profile_page">
     <h1>My Projects</h1>
+    </div> 
+
   </Layout>
 )
 

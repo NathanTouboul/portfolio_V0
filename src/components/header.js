@@ -6,9 +6,7 @@ const Header = ({ siteTitle, siteProfile, siteProjects, siteContact }) => (
   <header className="header">
     <div className="header__welcome">
       
-      <Link className="header__links" to="/">
-        {siteTitle}
-      </Link>
+      <Link className="header__links" to="/"> {siteTitle}</Link>
     
     </div>
     <div className="header__tabs"> 

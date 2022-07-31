@@ -2,14 +2,14 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import resume from "../docs/resume.pdf"
+import master from "../docs/IIT_Chicago_master.pdf"
 
 const ResumePage = () => (
 
   <Layout className = "layout">
-    <Seo title="Resume Page"/>
+    <Seo title="IIT master Page"/>
     <div className="pdf_embeded">    
-      <iframe className="pdf" src={resume} frameborder='0'></iframe>
+      <iframe className="pdf" src={master} frameborder='0'></iframe>
     </div>
   </Layout>
   

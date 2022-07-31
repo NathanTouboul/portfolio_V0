@@ -28,9 +28,7 @@ const Layout = ({ children }) => {
 
       <footer className="footer">
         <div className="footer__attribution">    
-        © {new Date().getFullYear()}, Built by Nathan with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        © {new Date().getFullYear()}, Built by Nathan Touboul
         </div>     
       </footer>
 

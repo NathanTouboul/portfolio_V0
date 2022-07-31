@@ -10,16 +10,13 @@ const HomePage = () => (
     
     <section className="presentation">
       <div className="presentation__intro">
-      <p>Hi I'm Nathan <br/> I am a french Software Engineer in San Diego! Let's connect!  </p>
-      <button class="btn"><i class="button_linkedin"></i>Linkedin</button>
-      <button class="btn"><i class="button_github"></i>GitHub</button>
+        <p>Hi I'm Nathan <br/> I am a french Software Engineer in San Diego! Let's connect!</p>
+        <div className="button_connect">
+          <a class="btn" href="https://www.linkedin.com/in/nathantouboul/" target="_blank" rel="noreferrer">Linkedin</a>
+          <a class="btn" href="https://github.com/NathanTouboul" target="_blank" rel="noreferrer">GitHub</a>
+          <Link class="btn" to="/resume-page/"> Resume </Link>
+        </div>
 
-
-      <button class="btn"><i class="button_resume"></i>Resume
-      {/* <Link className="" to="/profile-page/">
-      </Link> */}
-      <a href = "../docs/resume.pdf"></a>
-      </button>
 
       </div>
 
@@ -39,18 +36,19 @@ const HomePage = () => (
 
           <div classname="domains__subdomains__video">
 
-            <iframe title="Qt_video" 
-              id="ytplayer" type="text/html" src="https://www.youtube.com/embed/y33knp7ViVo" frameborder="0">
+            <iframe className="Qt_video"
+              id="ytplayer" type="text/html" src="https://www.youtube.com/embed/-sg4VVNGOZY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media">
             </iframe>
 
           </div>
         
           <div classname="domains__subdomains__description">
             <p>
-              I have been playing with path-finding algorithms and the Qt framework. The idea was for me to find a good way to visualize those algorithms searching for the goal
-              while building with a "pretty" GUI. Apart from using Qt data types, I used multithreading for real-time simulation and visualization. I am looking to apply Qt for web assembly,
-              to use this GUI directly on a page (this asks for some optimization as WebAssembly threads are quite complex).
+              I have been playing with path-finding algorithms and the Qt framework. The idea was for me to find a good way to visualize those algorithms searching for the goal while building with a "pretty" GUI. Apart from using Qt data types, I used multithreading for real-time simulation and visualization.
+              The entire application is coded with C++ and built with qmake. <br></br>
+              <a href="https://github.com/NathanTouboul/PathPlanning" target="_blank">Link to repo</a>
             </p>
+            
           </div>
             
         </div>
@@ -60,28 +58,38 @@ const HomePage = () => (
             Software and Machine Learning
           </div> 
           <div classname="domains__subdomains__description">
-          <p> Heavily focused on Software and Data Science,  I am particularly interested in Machine Learning. 
-          Indeed, I have studied ML in depth during my year at Illinois Tech, working on image recognition and autonomous driving. 
+          <p> Currently a software engineer at Qualcomm in San Diego, I am extremely fortunate to work in the domain that I am most interested in. Computer science has been my primary focus for years now. My interest in the domain started during my bachelor's in electronics, and solidified, during my master's thesis back in France, for which I worked on NURBS manipulation purely using python. Today, I am mostly interested in Machine Learning, Data Science and Robotics. Indeed, I have studied ML in-depth during my year at Illinois Tech, working on image recognition and autonomous driving. 
           </p>
           </div>
+          <div classname="domains__subdomains__video">
+              <img className= "bayesian1" alt="gif_lidar"></img>
+              <img className= "bayesian2" alt="gif_lidar"></img>
+
+            </div>
         </div>
 
         <div className ="domains__subdomains">
 
-        <div className = "domains__subdomains__title">
-          Advanced Robotics and Controls
-        </div> 
+          <div className = "domains__subdomains__title">
+            Advanced Robotics and Controls
+          </div> 
 
-        <div classname="domains__subdomains__description">
-          <p> Description Robotics and controls(active controls, path planning, SLAM) </p>
+          <div classname="domains__subdomains__description">
+            <p> Coming from a mechatronics background, I am proud of having a deep understanding of robotics engineering. Having studied first electronics, then mechanical and finally software engineering, I have been involved in a lot of advanced robotics projects, ranging from active controls to SLAM implementation. I have also been fortunate enough to present a research project at Illinois Tech on Lidar-based localization of autonomous vehicles.
+            </p>
+          </div>
+          
+          <div classname="domains__subdomains__video">
+            <img className= "gif_lidar" alt="gif_lidar"></img>
+          </div>
+
         </div>
-        </div>
-
-
 
         <div className="domains_more_projects">
-          More projects<Link className="header__links" to="\"></Link>
+          <Link class="btn" to="/projects-page/">More projects</Link>
         </div>
+
+        
       </section>
 
   </Layout>
