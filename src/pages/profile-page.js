@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-
+import "./profile-page.css"
 
 const ProfilePage = () => (
 

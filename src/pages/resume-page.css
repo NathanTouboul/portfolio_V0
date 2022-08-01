@@ -1,0 +1,11 @@
+.pdf_embeded{
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .pdf {
+    display: block;
+    border: none;
+    width:100%;
+    height: 100vh;
+  }
