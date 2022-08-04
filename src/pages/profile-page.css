@@ -3,12 +3,11 @@
  * ------------------------------------- */
  
  .title_profile_page{
-    margin-top:10%;
     text-align: center;
  }
  h1 {
-   margin: 3em 0 0 0;
-   font-size: 1.5em;
+   margin-top:10%;
+   font-size: 3.5em;
    letter-spacing: 2px;
    text-transform: uppercase;
  }
@@ -142,7 +141,7 @@ label a{
   background: var(--main-text-color);
 }
 .radio:checked ~ .content {
-  max-height: 50vh;
+  max-height:100vh;
   border-color: var(--main-element-color);
   margin-right: 20px;
   transform: translateX(20px);
