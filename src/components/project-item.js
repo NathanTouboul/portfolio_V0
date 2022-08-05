@@ -8,19 +8,20 @@ import { Link } from "gatsby"
 
 const ProjectItemStyles = styled.div`
   .projectItem__img {
-    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    display: flex;
+    justify-content: center;
+    align-items:center;
     width: 100%;
-    height: 400px;
-    border-radius: 10px;
+    height: 32vw;
+    border-radius: 5px;
     overflow: hidden;
-    display: inline-block;
-    border: 100px solid var(--gray-2);
+    padding-top: 5%;
+
+    box-shadow: 0px 1px 17px 11px rgba(0,0,0,0.75);
 
     img {
-      padding-top:5%;
-      padding-bottom:5%;
-      padding-left:5%;
-      padding-right:5%;
+      box-shadow: 0px 1px 17px 11px rgba(0,0,0,0.75);
+      padding:1%;
       height: 90%;
       width: 90%;
     }
@@ -29,21 +30,21 @@ const ProjectItemStyles = styled.div`
     margin-top: 1rem;
     background-color: var(--deep-dark);
     padding: 1rem;
-
     border-radius: 12px;
   }
   .projectItem__title {
     font-size: 2.2rem;
-    
+    color:black;
+    text-transform: capitalize;
+    font-weight: bold;
+
   }
   .projectItem__info a{
     text-align:left;
     text-decoration:none;
-
   }
   .projectItem__desc {
-    font-size: 1.6rem;
-    font-family: 'RobotoMono Regular';
+    font-size: 1.5rem;
     margin-top: 1rem;
   }
   @media only screen and (max-width: 768px) {

@@ -14,7 +14,6 @@ import 'swiper/swiper-bundle.min.css'
 SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
-  padding: 10rem 0;
 
   .container__title{
     display:flex;
@@ -25,16 +24,29 @@ const ProjectSectionStyle = styled.div`
   .container__title h1{
     font-size:4vw;
     text-align: center;
+    height: 0px
   }
 
   .projects__allItems {
     display: flex;
-    gap: 3rem;
+  }
+
+  .swiper {
+    width: 100%;
   }
   .swiper-container {
-    padding-top: 8rem;
+    padding-top: 5rem;
     max-width: 100%;
   }
+
+  .swiper-slide {
+    position:relative;
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    box-sizing: border-box;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
@@ -42,7 +54,7 @@ const ProjectSectionStyle = styled.div`
     width: 50px;
     background: var(--deep-dark);
     z-index: 10;
-    right: 80vw;
+    right: 85vw;
     left: auto;
     top: 0;
     transform: translateY(50%);
@@ -50,8 +62,9 @@ const ProjectSectionStyle = styled.div`
     border-radius: 8px;
   }
   .swiper-button-next {
-    right: 15vw;
+    right: 12vw;
   }
+
   .swiper-button-prev::after,
   .swiper-button-next::after {
     font-size: 2rem;
@@ -80,7 +93,7 @@ const ProjectsPage = () => (
         </div>
         <div className="projects__allItems">
           <Swiper
-            spaceBetween={50}
+            spaceBetween={25}
             slidesPerView={1}
             navigation
             breakpoints={{
