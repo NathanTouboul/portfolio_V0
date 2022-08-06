@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { Link } from "gatsby"
 
 const Header = ({ siteTitle, siteProfile, siteProjects, siteContact }) => (
+  
   <header className="header">
     <div className="header__welcome">
       
@@ -10,10 +11,10 @@ const Header = ({ siteTitle, siteProfile, siteProjects, siteContact }) => (
     
     </div>
     <div className="header__tabs"> 
-      <Link className="header__links" to="/profile-page/">
+      <Link className="header__links" to="#profile_section">
         {siteProfile}
       </Link>
-      <Link className="header__links" to="/projects-page/">
+      <Link className="header__links" to="#project_section">
         {siteProjects}
       </Link>
       <Link className="header__links" to="">
@@ -22,6 +23,8 @@ const Header = ({ siteTitle, siteProfile, siteProjects, siteContact }) => (
       
     </div>  
   </header>
+
+
 )
 
 Header.propTypes = {

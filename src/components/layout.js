@@ -24,8 +24,28 @@ const Layout = ({ children }) => {
       siteContact   = {"CONTACT"}
       />
 
-      <main className = "main">{children}</main>
+    <div class="container-navigation">
+      
+          
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Resume</a></li>
+            </ul>
+           </div>
+          </nav>
 
+    </div>
+      <hr />
+      <main className = "main">{children}</main>
+      <hr />
       <footer className="footer">
         <div className="footer__attribution">    
         © {new Date().getFullYear()}, Built by Nathan Touboul

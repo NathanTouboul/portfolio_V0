@@ -1,8 +1,11 @@
 import {v4 as uuidv4} from 'uuid'
 import QtImage from "../images/QtPathFinding.jpg"
-import GraphSlam from "../images/lidar_measurements.gif"
+import Lidar from "../images/complexity_localization.jpg"
 import MultiSpiderman from "../images/multi_classification.png"
+import GraphSlam from "../images/lidar_measurements.gif"
 import Fisher from "../images/fisher.jpg"
+import DriveCycle from "../images/drive_cycle.png"
+import Scara from "../images/RobotScara.jpg"
 
 const projects_data = [
 
@@ -15,7 +18,14 @@ const projects_data = [
         link: "https://github.com/NathanTouboul/PathPlanning",
     },
 
-
+    {
+        id: uuidv4(), 
+        name: 'Lidar-Localization of autonomous Vehicle',
+        desc:
+            "Ensuring navigation integrity and safety in an area with low GNSS availability with a lidar sensor.",
+        img: Lidar,
+        link: "https://github.com/NathanTouboul/ResearchProject_LidarVisualization",
+    },
     {
         id: uuidv4(), 
         name: 'Neural Networks for a multi-class classification',
@@ -41,6 +51,24 @@ const projects_data = [
             "Coding a simple neural networks without any library (besides numpy). Comparing metrics with Fischer Discriminant", 
         img: Fisher,
         link:"https://github.com/NathanTouboul/FischerDiscriminant_VS_NeuralNetwork",
+    },
+
+    {
+        id: uuidv4(), 
+        name: 'Drive Cycle and Autonomous Vehicle',
+        desc:
+            "Building an autonomous drive cycle vehicle by implementing following-controls of a standard EPA drive cycle", 
+        img: DriveCycle,
+        link:"https://github.com/NathanTouboul/AutonomousVehicle_DriveCycle",
+    },
+
+    {
+        id: uuidv4(), 
+        name: 'SCARA',
+        desc:
+            "Kinematic and dynamic modelization of a 3-axis SCARA robot, with controls.",
+        img: Scara,
+        link: "https://github.com/NathanTouboul/ScaraRobotControl",
     },
 
 ]
