@@ -55,7 +55,8 @@ const ProjectSectionStyle = styled.div`
     top: 0;
     transform: translateY(50%);
     color: var(--gray-1);
-    border-radius: 8px;
+    border-radius: 10px;
+    background: black;
   }
   .swiper-button-next {
     right: 5%;
@@ -66,15 +67,38 @@ const ProjectSectionStyle = styled.div`
     font-size: 2rem;
   }
   @media only screen and (max-width: 768px) {
+
     .projects__allItems {
       flex-direction: column;
       max-width: 400px;
-      margin: 0 auto;
-      margin-top: 7rem;
-      gap: 5rem;
+      margin-left: 15vw;
+      margin-right: 15vw;
+      gap: 10rem;
+
       .projectItem__img {
         width: 100%;
       }
+    }
+
+    .swiper-container {
+      padding-top: 15%;
+      max-width: 100%;
+      padding-left: 0vw;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      height: 5vh;
+      width: 5vh;
+      right: 20%;
+      left: auto;
+      top: 0;
+      transform: translateY(50%);
+
+    }
+
+    .swiper-button-next {
+      right: 5%;
     }
   }
 `;
@@ -97,7 +121,6 @@ const HomePage = () => (
             My Linkedin
           </a>
           <a class="btn" href="https://github.com/NathanTouboul" target="_blank" rel="noreferrer">My GitHub</a>
-          <Link class="btn" to="/resume-page/"> My resume</Link>
         </div>
 
 
@@ -187,7 +210,7 @@ const HomePage = () => (
             <p>
               I had the great opportunity to pursue a second master's degree at Illinois Tech in Chicago. During this year, I mainly studied Advanced robotics and Machine Learning. On the robotics side, I worked on Simultaneous Localization And Mapping algorithms, Kalman filters, and Path Planning in general. On the Machine Learning side, I studied neural networks in depth (mathematically), as well as image recognition and Data-Driven modelization and control of systems.
               <br/>
-              Click <Link class="links_profile" to="/master_iit_page/" target="_blank" rel="noreferrer">here</Link> to view my diploma.
+              Click <Link class="links_profile" to="/master-iit-page/" target="_blank" rel="noreferrer">here</Link> to view my diploma.
               <br/>
 
             </p>
@@ -270,7 +293,7 @@ const HomePage = () => (
           <div class='content'>
             <p>
             <br/>
-            Click <Link class="links_profile" to="" target="_blank" rel="noreferrer">here</Link> to view my diploma. (available next spring)
+            Click <Link class="links_profile" to="/master-insa-page/" target="_blank" rel="noreferrer">here</Link> to view my diploma. (available next spring)
             <br/>
             </p>
           </div>
@@ -287,7 +310,7 @@ const HomePage = () => (
           </div>
           <div class='content'>
             <p>
-            Click <Link class="links_profile" to="" target="_blank" rel="noreferrer">here</Link> to view my diploma.
+            Click <Link class="links_profile" to="/bachelor-page/" target="_blank" rel="noreferrer">here</Link> to view my diploma.
             </p>
           </div>
         </li>

@@ -61,6 +61,7 @@
 .content {
   max-height: 20px;
   padding-top:10%;
+  padding-bottom:5%;
   padding-right:5%;
   padding-left:3%;
   border-color: transparent;
@@ -103,6 +104,7 @@
   word-break: break-word;
   hyphens: auto;
   overflow: hidden;
+  font-size: 1.5vw;
 }
 label {
   font-size: 1.3em;
@@ -141,7 +143,7 @@ label a{
   background: var(--main-text-color);
 }
 .radio:checked ~ .content {
-  max-height:100vh;
+  max-height: 100vh;
   border-color: var(--main-element-color);
   margin-right: 20px;
   transform: translateX(20px);
@@ -150,7 +152,7 @@ label a{
 
 .radio:checked ~ .content p {
   padding-top:1%;
-  max-height: 300px;
+  max-height: 100vh;
   color: var(--main-text-color);
   transition: color 0.3s linear 0.3s;
 }
@@ -164,14 +166,11 @@ label a{
     padding-left: 0;
     border-left: none;
   }
-  #timeline li {
-    margin: 50px 0;
-  }
 
   label {
     width: 85%;
-    font-size: 1.1em;
-    white-space: nowrap;
+    font-size: 3.5vw;
+    white-space: wrap;
     text-overflow: ellipsis;
     overflow: hidden;
     display: block;
@@ -179,30 +178,18 @@ label a{
   }
 
   .content {
-    padding-top: 45px;
-    border-color: #eee9dc;
+    height:fit-content;
+    border-color: grey;
+    padding-top:22%;
+    padding-bottom:5%;
   }
 
   .content:before, .content:after {
-    border: solid transparent;
-    bottom: 100%;
+    display:none;
   }
-  .content:before {
-    border-bottom-color: inherit;
-    border-width: 17px;
-    top: -16px;
-    left: 50px;
-    margin-left: -17px;
-  }
-  .content:after {
-    border-bottom-color: var(--main-bg-color);
-    border-width: 20px;
-    top: -20px;
-    left: 50px;
-    margin-left: -20px;
-  }
+ 
   .content p {
-    font-size: 0.9em;
+    font-size: 2.5vw;
     line-height: 1.4;
   }
 

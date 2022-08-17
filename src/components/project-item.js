@@ -13,7 +13,7 @@ const ProjectItemStyles = styled.div`
     justify-content: center;
     align-items:center;
     width: 80%;
-    height: 45vh;
+    height: 60vh;
     border-radius: 5px;
     overflow: hidden;
     padding-top: 5%;
@@ -24,6 +24,7 @@ const ProjectItemStyles = styled.div`
       padding:1%;
       height: 90%;
       width: 90%;
+      opacity: 0.8;
     }
   }
   .projectItem__info {
@@ -52,6 +53,18 @@ const ProjectItemStyles = styled.div`
   @media only screen and (max-width: 768px) {
     .projectItem__img {
       height: 350px;
+    }
+
+    .projectItem__info {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .projectItem__title {
+      padding-right: 0;
+      padding-left: 0;
+    }
+    .projectItem__desc {
+      padding-right:0;
     }
   }
 `;

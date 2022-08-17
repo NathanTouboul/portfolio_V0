@@ -1,6 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
@@ -18,10 +19,10 @@ const Layout = ({ children }) => {
   return (
     <body>
       <Header 
-      siteTitle     = {'SITE IN CONSTRUCTION'} 
-      siteProfile   = {'PROFILE'} 
-      siteProjects  = {"PROJECTS"}
-      siteContact   = {"CONTACT"}
+      siteTitle         = {'HOME'} 
+      sectionProfile    = {'PROFILE'} 
+      sectionProjects   = {"PROJECTS"}
+      siteContact       = {"CONTACT"}
       />
 
     <div class="container-navigation">
@@ -34,10 +35,10 @@ const Layout = ({ children }) => {
                 <span></span>
                 <span></span>
             <ul id="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Resume</a></li>
+              <li><a href="/">Home</a></li>
+              <li><Link className="header__links" to="#profile_section">Profile</Link></li>
+              <li><Link className="header__links" to="#project_section">Projects</Link></li>
+              <li><Link className="header__links" to="/resume-page/">Resume</Link></li>
             </ul>
            </div>
           </nav>
