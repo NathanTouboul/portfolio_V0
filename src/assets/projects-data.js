@@ -1,11 +1,11 @@
 import {v4 as uuidv4} from 'uuid'
-import QtImage from "../images/QtPathFinding.jpg"
-import Lidar from "../images/complexity_localization.jpg"
-import MultiSpiderman from "../images/multi_classification.png"
-import GraphSlam from "../images/lidar_measurements.gif"
-import Fisher from "../images/fisher.jpg"
-import DriveCycle from "../images/drive_cycle.png"
-import Scara from "../images/RobotScara.jpg"
+import QtImage from "/src/images/QtPathFinding.jpg"
+import Lidar from "/src/images/complexity_localization.jpg"
+import MultiSpiderman from "/src/images/multi_classification.png"
+import GraphSlam from "/src/images/lidar_measurements.gif"
+import Fisher from "/src/images/fisher.jpg"
+import DriveCycle from "/src/images/drive_cycle.png"
+import Scara from "/src/images/RobotScara.jpg"
 
 const projects_data = [
 
