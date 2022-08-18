@@ -26,21 +26,15 @@
 }
 
 #timeline li {
-  margin: 40px 0;
   position: relative;
-}
-
-#timeline p {
-  margin: 0 0 15px;
 }
 
 .date {
   display:flex;
-  text-align: right;
   margin-top: -10px;
   top: 50%;
   left: -30%;
-  font-size: 1em;
+  font-size: 1.5vw;
   line-height: 20px;
   position: absolute;
 }
@@ -61,7 +55,7 @@
 .content {
   max-height: 20px;
   padding-top:10%;
-  padding-bottom:5%;
+  padding-bottom:1%;
   padding-right:5%;
   padding-left:3%;
   border-color: transparent;
