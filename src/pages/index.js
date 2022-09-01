@@ -111,9 +111,7 @@ const HomePage = () => (
     <section className="presentation">
       <div className="presentation__intro">
         <p>
-        Hi, I'm Nathan <br/> I am a french Software Engineer in San Diego! 
-        I am currently looking for a position in Machine Learning and/or software robotics engineering! 
-        Let's connect!
+        Hi, I'm Nathan <br/> I am a french Software Engineer in San Diego! I am currently seeking a position in Machine Learning or software robotics engineering! Let's connect!
         </p>
         <div className="button_connect">
           <a class="btn" href="https://www.linkedin.com/in/nathantouboul/" target="_blank" rel="noreferrer"> 
@@ -122,7 +120,6 @@ const HomePage = () => (
           </a>
           <a class="btn" href="https://github.com/NathanTouboul" target="_blank" rel="noreferrer">My GitHub</a>
         </div>
-
 
       </div>
 
@@ -165,7 +162,7 @@ const HomePage = () => (
         <div  id="domain-software" className ="domains__subdomains">
           
           <div class="domains__subdomains__description">
-          <p> I am extremely fortunate to work in the domain that I am most interested in. My interest in Computer science sparked first during my bachelor's degree in electronics, and solidified in the years to come. Coming from a mechatronics background, I am also proud of having a deep understanding of robotics. I have been involved in a lot of advanced robotics projects, ranging from active controls to SLAM implementation. Today, I am also interested in Machine Learning and Data Science. I have studied ML in-depth during the last few years, working for instance on image recognition and autonomous driving. 
+          <p> I am incredibly fortunate to work in a domain that fascinates me. My interest in Computer Science was first sparked during my bachelor's degree in electronics and solidified in the future. Coming from a mechatronics background, I am also proud of having a deep understanding of robotics. I have been involved in many advanced robotics projects, ranging from active controls to SLAM implementation. Today, I am also interested in Machine Learning and Data Science. I have studied ML in-depth during the last few years, working, for instance, on image recognition and autonomous driving.
           </p>
           </div>  
           <div class="domains__subdomains__video">
@@ -193,8 +190,8 @@ const HomePage = () => (
           </div> 
           <div class='content'>
             <p>
-              Currently working as a software engineer in the automotive team of Qualcomm in San Diego. I am focusing on enabling graphics and audio features for in-vehicle devices. For the moment, I have been working with OpenCL and EGL for graphics and ALSA for audio. Day to day, I mostly use C++, Python and git as well as interacting with Linux shells and virtual machines. 
-            </p>
+            Currently working as a software engineer in the automotive team of Qualcomm in San Diego. My current endeavor is enabling support of the Audio APIs for Linux named ALSA. I was also in charge of improving graphics features for in-vehicle devices using the OpenCL and EGL APIs. 
+Day to day, I mostly use C++, Python, and git and interact with Linux shells and virtual machines.            </p>
           </div>
         </li>
         <li class='work'>
@@ -228,10 +225,9 @@ const HomePage = () => (
           </div>
           <div class='content'>
             <p>
-              During my year in Chicago, I had the chance to complete a research project in the Navigation Laboratory of Illinois Tech on lidar-based localization of autonomous vehicles.
-              
-              The goal was to ensure navigation integrity and safety in an area with low GNSS availability (Chicago downtown here). A Velodyne’s Puck lidar sensor was then used to add landmark detection to compensate for IMU drift. The interesting twist in this project was the use of the Error Correction Codes domain to ensure landmark identification against the misassociation problem (basically we want to identify which object, trees in this case, was detected). I researched the implementation of Hamming and BCH codes for this objective and, by the end I established a Misdetection Error Model to quantify the Probability of Hazardously Misleading Information. 
-              <br/>
+            During my year in Chicago, I had the chance to complete a research project in the Navigation Laboratory of Illinois Tech on lidar-based localization of autonomous vehicles. The goal was to ensure navigation integrity and safety in an area with low GNSS availability (Chicago downtown here). A Velodyne’s Puck lidar sensor was then used to add landmark detection to compensate for IMU drift. 
+            <br/>The interesting twist in this project was the use of the Error Correction Codes domain to ensure landmark identification against the misassociation problem (basically, we want to identify which object, trees in this case, was detected). I researched the implementation of Hamming and BCH codes for this objective and, by the end I established a Misdetection Error Model to quantify the Probability of Hazardously Misleading Information.
+            Click here to check the GitHub repository.<br/>
               Click <a class="links_profile" href="https://github.com/NathanTouboul/ResearchProject_LidarVisualization" target="_blank" rel="noreferrer">here</a> to check the GitHub repository.
               <br/>
 
@@ -251,10 +247,9 @@ const HomePage = () => (
           </div>
           <div class='content'>
             <p>
-            Kapaix is a Big Data Management company, based in London. I was fortunate enough to work for 3 months in this company. The goal of this internship was to assess the quality of a massive database, containing mostly time series. I designed and trained neural network architectures for anomaly detection purposes. The neural networks were analyzing discrepancies in frequency and amplitude in the time series. 
-            <br/>
-            I preprocessed the dataset through the construction of histograms with variable time frames: I used Principal Component Analysis and k-means clustering as a first analysis tool.
-            <br/>
+            I was fortunate to work for three months in a  Big Data Management company. This internship aimed to assess the quality of a massive database mainly containing time series. I designed and trained neural network architectures for anomaly detection purposes. The neural networks analyzed discrepancies in frequency and amplitude in the time series.
+            <br/>I preprocessed the dataset by constructing histograms with variable time frames: I used Principal Component Analysis and k-means clustering as the first analysis tool.
+            I built two models: classification (CNN) and pattern recognition (auto-encoder) using Python: Keras - TensorFlow - Pandas
             <strong>
             Two models were built: classification (CNN) and pattern recognition (auto-encoder) using Python: Keras - TensorFlow - Pandas</strong>
             
@@ -273,11 +268,7 @@ const HomePage = () => (
           </div>
           <div class='content'>
             <p>
-            This thesis, in collaboration with Safran Aircraft Engines was centered around the merging of CAD (Computer-Aided Design) and FEA (Finite Element Analysis) methods through Non-Uniform Rational Basis Spline <strong>(NURBS)</strong> manipulations.
-            The main goal of this thesis was to create an algorithm to generate a fillet between two CAD volumes. This fillet would be used to join the blade and its root volumes of a turbojet engine.
-            I implemented a fillet patch mesh to join those 3D curves on Python with Numpy and Geomdl.
-            I also analyzed the structure of these engine blades using parametrization models by projection, interpolation, and approximation of splines.
-            </p>
+            This thesis, in collaboration with Safran Aircraft Engines, was centered around the merge of CAD (Computer-Aided Design) and FEA (Finite Element Analysis) methods through Non-Uniform Rational Basis Spline (NURBS) manipulations. The main goal of this thesis was to create an algorithm to generate a fillet between two CAD volumes. We used this fillet to join the blade and its root volumes of a turbojet engine. I implemented a fillet patch mesh to join those 3D curves on Python with Numpy and Geomdl. I also analyzed the structure of these engine blades using parametrization models by projection, interpolation, and approximation of splines.</p>
           </div>
         </li>
 

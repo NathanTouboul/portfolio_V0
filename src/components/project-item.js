@@ -51,7 +51,7 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 350px;
+      height: 45vw;
     }
 
     .projectItem__info {

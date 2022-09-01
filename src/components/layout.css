@@ -376,7 +376,7 @@ body {
   }
 
   .presentation{
-    height:25vh;
+    height:50vw;
     padding-bottom: 5vw;
   }
   .presentation__intro{
@@ -387,28 +387,39 @@ body {
   .presentation__picture {
     padding-right: 10%;
   }
-  
+  .presentation__picture img{
+    height: 21vw;
+  }
+  hr {
+    visibility: hidden;
+  }
   .btn{
     font-size:3vw;
   }
 
   .section__title h1{
     font-size: 5vw;
-    margin-top: 25vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    letter-spacing: 5px;
   }
   .domains__subdomains{
+    padding-left: 10%;
     flex-flow: column;
-    height: 80vh;
+    height: 120vw;
   }
   .domains__subdomains__description{
     width: 80vw;
     font-size: 3vw;
   }
-
   .domains__subdomains__video{
     width: 80vw;
-    height: 100vh;
-
+    height: 150vw;
+  }
+  .Qt_video{
+    width: 100%;
+    max-height: 50vh;
+    height: 100%;
   }
   .footer__attribution{
     font-size: 2.5vw;

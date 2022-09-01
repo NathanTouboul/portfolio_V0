@@ -130,20 +130,20 @@ label a{
   cursor: auto;
   transform: translateX(42px);
 }
-.radio:hover + .relative label {
+.radio:checked + .relative label {
   cursor: auto;
   transform: translateX(42px);
 }
-.radio:hover + .relative label a{
+.radio:checked + .relative label a{
   pointer-events: auto;
   text-decoration: underline;
   text-decoration-color: var(--main-text-color);
 }
 
-.radio:hover + .relative .circle {
+.radio:checked + .relative .circle {
   background: var(--main-text-color);
 }
-.radio:hover ~ .content {
+.radio:checked ~ .content {
   max-height: 100vh;
   border-color: var(--main-element-color);
   margin-right: 20px;
@@ -151,7 +151,7 @@ label a{
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
-.radio:hover ~ .content p {
+.radio:checked ~ .content p {
   padding-top:1%;
   max-height: 100vh;
   color: var(--main-text-color);
