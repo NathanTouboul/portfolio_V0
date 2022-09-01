@@ -1,25 +1,32 @@
 /* -------------------------------------
  * General Style
  * ------------------------------------- */
- 
+ :root {
+  --main-bg-color: rgb(22, 22, 22);
+  --secondary-bg-color: #11235d;
+  --main-text-color: #ffffff;
+  --main-element-color: gray;
+  --main-text-size: 2vw;
+  --title-text-size: 2.5vw;
+  --main-padding-sides: 15%;
+}
+
+.profile{
+  margin-bottom: 10%;
+}
  .title_profile_page{
     text-align: center;
  }
- h1 {
-   margin-top:10%;
-   font-size: 3.5em;
-   letter-spacing: 2px;
-   text-transform: uppercase;
- }
+
  
 /* -------------------------------------
 * timeline
 * ------------------------------------- */
 #timeline {
   list-style: none;
-  margin-left: 25%;
-  margin-right: 10%;
-  margin-bottom: 10%;;
+  margin-left: 30%;
+  margin-right: 15%;
+  /* margin-bottom: 10%; */
   padding-left: 32px;
   border-left: 3px solid var(--main-element-color);
 
@@ -33,7 +40,7 @@
   display:flex;
   margin-top: -10px;
   top: 50%;
-  left: -30%;
+  left: -35%;
   font-size: 1.5vw;
   line-height: 20px;
   position: absolute;
@@ -98,10 +105,10 @@
   word-break: break-word;
   hyphens: auto;
   overflow: hidden;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 label {
-  font-size: 1.3em;
+  font-size: 1.4vw;
   position: absolute;
   z-index: 100;
   cursor: pointer;
@@ -123,20 +130,20 @@ label a{
   cursor: auto;
   transform: translateX(42px);
 }
-.radio:checked + .relative label {
+.radio:hover + .relative label {
   cursor: auto;
   transform: translateX(42px);
 }
-.radio:checked + .relative label a{
+.radio:hover + .relative label a{
   pointer-events: auto;
   text-decoration: underline;
   text-decoration-color: var(--main-text-color);
 }
 
-.radio:checked + .relative .circle {
+.radio:hover + .relative .circle {
   background: var(--main-text-color);
 }
-.radio:checked ~ .content {
+.radio:hover ~ .content {
   max-height: 100vh;
   border-color: var(--main-element-color);
   margin-right: 20px;
@@ -144,7 +151,7 @@ label a{
   transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear;
 }
 
-.radio:checked ~ .content p {
+.radio:hover ~ .content p {
   padding-top:1%;
   max-height: 100vh;
   color: var(--main-text-color);
@@ -159,6 +166,7 @@ label a{
     margin-left: 10%;
     padding-left: 0;
     border-left: none;
+    
   }
 
   label {

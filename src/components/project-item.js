@@ -12,19 +12,20 @@ const ProjectItemStyles = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    width: 80%;
-    height: 60vh;
-    border-radius: 5px;
+    height: 30vh;
+    width: 22.5vw;
+    border-radius: 5%;
     overflow: hidden;
     padding-top: 5%;
-    box-shadow: 0px 1px 17px 11px rgba(0,0,0,0.75);
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
 
     img {
-      box-shadow: 0px 1px 17px 11px rgba(0,0,0,0.75);
-      padding:1%;
-      height: 90%;
-      width: 90%;
-      opacity: 0.8;
+      height: 100%;
+      width: 100%;
+      opacity: 0.75;
+      border-radius: 5%;
     }
   }
   .projectItem__info {
@@ -35,10 +36,9 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
-    color: darkgrey;
+    color: white;
     text-transform: capitalize;
     font-weight: bold;    
-    padding-right: 10vw;
 
   }
   .projectItem__info a{
@@ -48,7 +48,6 @@ const ProjectItemStyles = styled.div`
   .projectItem__desc {
     font-size: 1.5rem;
     margin-top: 1rem;
-    padding-right: 8vw;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {

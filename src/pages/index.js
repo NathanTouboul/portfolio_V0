@@ -34,8 +34,8 @@ const ProjectSectionStyle = styled.div`
 
   .swiper-container {
     padding-top: 5%;
-    max-width: 100%;
-    padding-left: 7.5vw;
+    max-width: 75%;
+    padding-left: 1.5%;
   }
 
   .swiper-slide {
@@ -46,20 +46,20 @@ const ProjectSectionStyle = styled.div`
   .swiper-button-prev,
   .swiper-button-next {
     position: absolute;
-    height: 50px;
-    width: 50px;
+    height: 2.5vw;
+    width: 2.5vw;
     background: var(--deep-dark);
     z-index: 10;
-    right: 10%;
+    right: 5%;
     left: auto;
     top: 0;
-    transform: translateY(50%);
+    transform: translateY(110%);
     color: var(--gray-1);
-    border-radius: 10px;
+    border-radius: 100%;
     background: black;
   }
   .swiper-button-next {
-    right: 5%;
+    right: 0%;
   }
 
   .swiper-button-prev::after,
@@ -88,12 +88,12 @@ const ProjectSectionStyle = styled.div`
     .swiper-button-prev,
     .swiper-button-next {
       position: absolute;
-      height: 5vh;
-      width: 5vh;
+      height: 3.25vh;
+      width: 3.25vh;
       right: 20%;
       left: auto;
       top: 0;
-      transform: translateY(50%);
+      transform: translateY(110%);
 
     }
 
@@ -159,7 +159,7 @@ const HomePage = () => (
             
         </div>
         <div className = "section__title">
-          <h1>SOFTWARE, ROBOTICS AND MACHINE LEARNING</h1>
+          <h1>SOFTWARE, ROBOTICS & MACHINE LEARNING</h1>
         </div> 
 
         <div  id="domain-software" className ="domains__subdomains">
@@ -339,7 +339,7 @@ const HomePage = () => (
               },
               // when window width is >= 1200px
               1200: {
-                slidesPerView: 2,
+                slidesPerView: 3,
               },
             }}
           >

@@ -26,6 +26,25 @@ const projects_data = [
         img: Lidar,
         link: "https://github.com/NathanTouboul/ResearchProject_LidarVisualization",
     },
+
+    {
+        id: uuidv4(), 
+        name: 'Neural network from scratch',
+        desc:
+            "Coding a simple neural networks without any library (besides numpy). Comparing metrics with Fischer Discriminant", 
+        img: Fisher,
+        link:"https://github.com/NathanTouboul/FischerDiscriminant_VS_NeuralNetwork",
+    },
+
+    {
+        id: uuidv4(), 
+        name: 'Drive Cycle and Autonomous Vehicle',
+        desc:
+            "Building an autonomous drive cycle vehicle by implementing following-controls of a standard EPA drive cycle", 
+        img: DriveCycle,
+        link:"https://github.com/NathanTouboul/AutonomousVehicle_DriveCycle",
+    },
+
     {
         id: uuidv4(), 
         name: 'Neural Networks for a multi-class classification',
@@ -44,23 +63,7 @@ const projects_data = [
         link: "https://github.com/NathanTouboul/Graph_Slam_Victoria_Park",
 
     },
-    {
-        id: uuidv4(), 
-        name: 'Neural network from scratch',
-        desc:
-            "Coding a simple neural networks without any library (besides numpy). Comparing metrics with Fischer Discriminant", 
-        img: Fisher,
-        link:"https://github.com/NathanTouboul/FischerDiscriminant_VS_NeuralNetwork",
-    },
 
-    {
-        id: uuidv4(), 
-        name: 'Drive Cycle and Autonomous Vehicle',
-        desc:
-            "Building an autonomous drive cycle vehicle by implementing following-controls of a standard EPA drive cycle", 
-        img: DriveCycle,
-        link:"https://github.com/NathanTouboul/AutonomousVehicle_DriveCycle",
-    },
 
     {
         id: uuidv4(), 
