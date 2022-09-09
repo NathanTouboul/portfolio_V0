@@ -9,8 +9,8 @@ const Header = ({ siteTitle, sectionProfile, sectionProjects, siteContact }) => 
       <Link className="header__links" to="/"> {siteTitle}</Link>
     </div>
     <div className="header__tabs"> 
-      <Link className="header__links" to="#profile_section">{sectionProfile}</Link>
-      <Link className="header__links" to="#project_section">{sectionProjects}</Link>
+      <Link className="header__links" to="/#profile_section">{sectionProfile}</Link>
+      <Link className="header__links" to="/#project_section">{sectionProjects}</Link>
       <Link class="header__links" to="/resume-page/" >RESUME</Link>
     </div>  
   </header>
