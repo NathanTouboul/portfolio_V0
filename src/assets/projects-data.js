@@ -6,7 +6,8 @@ import GraphSlam from "/src/images/lidar_measurements.gif"
 import Fisher from "/src/images/fisher.jpg"
 import DriveCycle from "/src/images/drive_cycle.png"
 import Scara from "/src/images/RobotScara.jpg"
-
+import Cell from "/src/images/cell.png"
+import Command from "/src/images/ModeleDynamique.jpg"
 const projects_data = [
 
     {
@@ -17,6 +18,16 @@ const projects_data = [
         img: QtImage,
         link: "https://github.com/NathanTouboul/PathPlanning",
     },
+
+    {
+        id: uuidv4(), 
+        name: 'VGG vs Resnet',
+        desc:
+            "VGG16 and ResNet50 blood cells classification, using TensorFlow and image data generators. ", 
+        img: Cell,
+        link: "https://github.com/NathanTouboul/PathPlanning",
+    },
+
 
     {
         id: uuidv4(), 
@@ -31,7 +42,7 @@ const projects_data = [
         id: uuidv4(), 
         name: 'Neural network from scratch',
         desc:
-            "Coding a simple neural networks without any library (besides numpy). Comparing metrics with Fischer Discriminant", 
+            "Coding a simple neural networks without any library (besides numpy). Comparing metrics with Fisher's Discriminant", 
         img: Fisher,
         link:"https://github.com/NathanTouboul/FischerDiscriminant_VS_NeuralNetwork",
     },
@@ -64,13 +75,12 @@ const projects_data = [
 
     },
 
-
     {
         id: uuidv4(), 
         name: 'SCARA',
         desc:
             "Kinematic and dynamic modelization of a 3-axis SCARA robot, with controls.",
-        img: Scara,
+        img: Command,
         link: "https://github.com/NathanTouboul/ScaraRobotControl",
     },
 

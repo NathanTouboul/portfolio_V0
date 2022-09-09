@@ -106,9 +106,13 @@
   hyphens: auto;
   overflow: hidden;
   font-size: 1.3vw;
+  letter-spacing: 3px;
+
 }
 label {
   font-size: 1.4vw;
+  letter-spacing: 3px;
+
   position: absolute;
   z-index: 100;
   cursor: pointer;

@@ -61,9 +61,12 @@ const ProjectItemStyles = styled.div`
     .projectItem__title {
       padding-right: 0;
       padding-left: 0;
+      font-size:4vw;
+
     }
     .projectItem__desc {
       padding-right:0;
+      font-size:3vw;
     }
   }
 `;
