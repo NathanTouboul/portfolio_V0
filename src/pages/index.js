@@ -16,6 +16,12 @@ SwiperCore.use([Navigation]);
 
 const ProjectSectionStyle = styled.div`
 
+  .section__title h1{
+    color: var(--secondary-text-color);
+  }
+  .container {    
+    background-color: var(--secondary-bg-color);
+  }
   .container__title{
     display:flex;
     width:100%;
@@ -136,10 +142,10 @@ const HomePage = () => (
     {/* <hr /> */}
     <section className= "domains">
       
-      <div className = "section__title">
+      {/* <div className = "section__title">
         <h1>MY LATEST PROJECT</h1>
       </div>
-
+         
         <div id="domain-project" className ="domains__subdomains">
           <div class="domains__subdomains__video">
 
@@ -156,10 +162,9 @@ const HomePage = () => (
               <a href="https://github.com/NathanTouboul/PathPlanning" target="_blank" rel="noreferrer"> <em>Click here to check the repo</em></a>
         </div>
          
-        
-        <hr />
-            
-        </div>
+      
+        </div> */}
+      <hr />
         <div className = "section__title">
           <h1>SOFTWARE, ROBOTICS & MACHINE LEARNING</h1>
         </div> 
@@ -171,7 +176,10 @@ const HomePage = () => (
           </p>
           </div>  
           <div class="domains__subdomains__video">
-            <img className= "gif_lidar" alt="gif_lidar"></img>
+            {/* <img className= "gif_lidar" alt="gif_lidar"></img> */}
+            <iframe className="Qt_video"
+            id="ytplayer" type="text/html" src="https://www.youtube.com/embed/-sg4VVNGOZY?autoplay=1" frameborder="0" allow="autoplay; encrypted-media">
+            </iframe>
           </div>        
         </div>
 

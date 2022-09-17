@@ -19,7 +19,8 @@ const ProjectItemStyles = styled.div`
     padding-top: 5%;
     padding-left: 2.5%;
     padding-right: 2.5%;
-    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px 3px rgba(255,255,255,0.75);
+    background-color: var(--secondary-text-color);
 
     img {
       height: 100%;
@@ -36,7 +37,7 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
-    color: white;
+    color: var(--secondary-text-color);
     text-transform: capitalize;
     font-weight: bold;    
 

@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Space+Mono&display=swap');
 
 :root {
-  --main-bg-color: rgb(22, 22, 22);
-  --secondary-bg-color: #11235d;
-  --main-text-color: #ffffff;
+  --main-bg-color: #fbfbfd;
+  --secondary-bg-color: #000000;
+  --btn-bg-color: gray;;
+  --main-text-color: #000000;
+  --secondary-text-color: #fbfbfd;
   --main-element-color: gray;
   --main-text-size: 1vw;
   --title-text-size: 2vw;
@@ -35,19 +37,19 @@ body {
   font-feature-settings: "kern", "liga", "clig", "calt";
   display: flex;
   flex-direction: column;
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #243B55, #141E30);
+  background: var(--main-bg-color);  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to top, #243B55, #141E30); */
   /* background-image: linear-gradient(to top, #0acffe 0%, #495aff 100%); */
   /* background-image: linear-gradient(-225deg, #5D9FFF 0%, #8dc4fc 48%, #6BBBFF 100%); */
-  background-color: #0093E9;
-  background-image: linear-gradient(180deg, #0093E9 0%, #80c0d0 100%);
+  /* background-color: #0093E9;
+  background-image: linear-gradient(180deg, #0093E9 0%, #80c0d0 100%); */
   margin: 0;
 }
 
 .main {
   flex: 1 0 auto;
   font-size: 1.25vw;
-  color:var(--main-text-color);
+  color: var(--secondary-text-color);
   text-align: justify;
   text-justify: inter-word;
 }
@@ -60,6 +62,9 @@ body {
   padding-bottom: 1%;
   font-size: 1vw;
   letter-spacing: 2px;
+  font-weight: bold;
+  background-color: var(--secondary-bg-color);
+
 }
 
 .container-navigation{
@@ -80,7 +85,7 @@ body {
 .header__links{
   width:30%;
   text-decoration: none;
-  color: var(--main-text-color);
+  color: var(--secondary-text-color);
 }
 
 .presentation{
@@ -89,7 +94,8 @@ body {
   height: 50vw;
   padding-top: 10%;
   padding-bottom: 10%;
-  /* background-color:; */
+  background-color: var(--secondary-bg-color);
+
 }
 
 .presentation__intro{
@@ -98,7 +104,7 @@ body {
   padding-left: 15%;
   padding-right: 10%;
   border-radius: 10px;
- 
+
   width: 70%;
 }
 .presentation__intro p{
@@ -108,7 +114,6 @@ body {
   letter-spacing: 3px;
 }
 
-
 .button_connect {
   display:flex;
   flex-direction:row;
@@ -116,7 +121,7 @@ body {
 }
 
 .btn {
-  background-color: #0275b7;
+  background-color: var(--btn-bg-color);
   border: none;
   color: var(--main-text-color);
   cursor: pointer;
@@ -155,6 +160,7 @@ body {
 .domains{
   display: flex;
   flex-flow: column;
+  height: 50vw;
 }
 
 .domains__subdomains{
@@ -169,14 +175,14 @@ body {
 }
 
 .section__title{
-  padding-bottom: 1%;
-  padding-top: 1%;
+  padding-bottom: 3%;
+  padding-top: 5%;
 }
 
 .section__title h1{
   font-size: 2vw;
   text-align: center;
-  color:rgb(255, 255, 255);
+  color:var(--main-text-color);
   letter-spacing: 10px;
   font-weight: bold;
   text-transform: uppercase;
@@ -189,8 +195,7 @@ body {
   text-justify: auto;
   font-size: 1.25vw;
   letter-spacing: 2px;
-
-
+  color:var(--main-text-color);
 }
 .domains__subdomains__description a{
   text-decoration: none;
@@ -251,11 +256,12 @@ body {
 }
 
 /* Screen */
-
 @media only screen and (max-width: 768px) {
 
   .header {
-    display:none;
+    visibility: hidden;
+    height: 0;
+    padding: 0em 0em;
   }
 
   .container-navigation {
@@ -263,8 +269,10 @@ body {
     position: sticky;
     display: flex;
     top: 0;
-    justify-content: top;
-    align-items: center;
+    justify-content: center;
+    align-items: bottom;
+    height: 0;
+    width: 0;
   }
 
   a{
@@ -316,7 +324,7 @@ body {
     height: 2px;
     margin-bottom: 5px;
     position: relative;
-    background: #ffffff;
+    background: #001dfb;
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0px;
@@ -385,13 +393,16 @@ body {
   }
 
   .presentation{
-    height:50vw;
+    height:80vw;
     padding-bottom: 5vw;
   }
   .presentation__intro{
-    font-size: 3vw;
     padding-left: 10%;
     padding-right: 10%;
+  }
+  .presentation__intro p {
+    font-size: 3vw;
+
   }
   .presentation__picture {
     padding-right: 10%;
@@ -400,12 +411,15 @@ body {
     height: 21vw;
   }
   hr {
-    visibility: hidden;
+    visibility: visible;
   }
   .btn{
     font-size:3vw;
   }
 
+  .domains{
+    height: 200vw;
+  }
   .section__title h1{
     font-size: 5vw;
     margin-top: 5vw;
@@ -415,7 +429,6 @@ body {
   .domains__subdomains{
     padding-left: 10%;
     flex-flow: column;
-    height: 120vw;
   }
   .domains__subdomains__description{
     width: 80vw;
@@ -426,9 +439,8 @@ body {
     height: 150vw;
   }
   .Qt_video{
-    width: 100%;
-    max-height: 50vh;
     height: 100%;
+    width: 100%;
   }
   .footer__attribution{
     font-size: 2.5vw;

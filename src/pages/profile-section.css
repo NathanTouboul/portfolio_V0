@@ -2,10 +2,6 @@
  * General Style
  * ------------------------------------- */
  :root {
-  --main-bg-color: rgb(22, 22, 22);
-  --secondary-bg-color: #11235d;
-  --main-text-color: #ffffff;
-  --main-element-color: gray;
   --main-text-size: 2vw;
   --title-text-size: 2.5vw;
   --main-padding-sides: 15%;
@@ -25,8 +21,7 @@
 #timeline {
   list-style: none;
   margin-left: 30%;
-  margin-right: 15%;
-  /* margin-bottom: 10%; */
+  margin-right: 10%;
   padding-left: 32px;
   border-left: 3px solid var(--main-element-color);
 
@@ -44,6 +39,7 @@
   font-size: 1.5vw;
   line-height: 20px;
   position: absolute;
+  color: var(--main-text-color);
 }
 
 .circle {
@@ -70,6 +66,7 @@
   border-style: solid;
   border-radius: 0.5em;
   position: relative;
+  
 }
 
 .links_profile{
@@ -100,7 +97,7 @@
 }
 .content p {
   max-height: 0;
-  color: transparent;
+  color: var(--main-text-color);
   text-align: justify;
   word-break: break-word;
   hyphens: auto;
@@ -112,12 +109,13 @@
 label {
   font-size: 1.4vw;
   letter-spacing: 3px;
-
   position: absolute;
   z-index: 100;
   cursor: pointer;
   top: 20px;
   transition: transform 0.2s linear;
+  color: var(--main-text-color);
+
 }
 
 label a{
@@ -186,8 +184,8 @@ label a{
   .content {
     height:fit-content;
     border-color: grey;
-    padding-top:22%;
-    padding-bottom:5%;
+    padding-top:30%;
+    padding-bottom:10%;
   }
 
   .content:before, .content:after {

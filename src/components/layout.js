@@ -44,7 +44,6 @@ const Layout = ({ children }) => {
           </nav>
 
     </div>
-      <hr />
       <main className = "main">{children}</main>
       <hr />
       <footer className="footer">
