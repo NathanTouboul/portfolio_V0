@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import bachelor from "../docs/IIT_Chicago_master.pdf"
+import bachelor from "../docs/bachelor.pdf"
 
 const BachelorPage = () => (
 

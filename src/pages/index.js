@@ -357,7 +357,7 @@ const HomePage = () => (
           </div>
           <div class='content'>
             <p>
-            Click <Link class="links_profile" to="/bachelor-page/" target="_blank" rel="noreferrer">here</Link> to view my diploma.
+              <Link class="links_profile" to="/bachelor-page/" target="_blank" rel="noreferrer"> Click here to view my diploma.</Link>
             </p>
           </div>
         </li>
