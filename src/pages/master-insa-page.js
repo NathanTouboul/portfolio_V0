@@ -2,7 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import master from "../docs/IIT_Chicago_master.pdf"
+import master from "../docs/INSA_attestation.pdf"
 
 const MasterInsaPage = () => (
 

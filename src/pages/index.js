@@ -340,7 +340,7 @@ const HomePage = () => (
           <div class='content'>
             <p>
             <br/>
-            <Link class="links_profile" to="/master-insa-page/" target="_blank" rel="noreferrer"> <em>Click here to view my diploma.</em> </Link>  (available next spring)
+            <Link class="links_profile" to="/master-insa-page/" target="_blank" rel="noreferrer"> <em>Click here to view my diploma.</em> </Link>  (certificate in french, diploma available next spring)
             <br/>
             </p>
           </div>
